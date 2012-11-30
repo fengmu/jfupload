@@ -1,0 +1,7 @@
+from django.conf.urls import patterns,url
+urlpatterns=patterns('mysite.jfupload.views',
+    url(r'^$','index'),
+    url(r'^upload/$','upload',name="upload"),
+    url(r'^check_existing/$','check_existing',name="check_existing"),
+)
+
